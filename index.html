@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="shortcut icon" href="./images/icon-scissors.svg" type="image/x-icon">
+  <link rel="stylesheet" href="./styles/style.css">
+  <title>ROCK-PAPER-SCISSORS</title>
+</head>
+
+<body>
+  <div class="resultat">
+    <div class="container-resultat">
+      <div class="conntainer-left">
+        <span>YOU PICKED</span>
+        <div id="box-you"><img src="./images/icon-paper.svg" id="img-you"></div>
+      </div>
+      <div class="container-center">
+        <span id="resultat"></span>
+        <button onclick="PlayAgain()">PLAY AGAIN</button>
+      </div>
+      <div class="container-right">
+        <span>THE HOUSE PICKED</span>
+        <div id="box-house"><img src="./images/icon-paper.svg" id="img-house"></div>
+      </div>
+
+    </div>
+  </div>
+  <div class="page-rules">
+    <div class="container-rules">
+      <nav>
+        <span>RULES</span>
+        <button onclick="ClosePageRules()">&times;</button>
+      </nav>
+      <div class="img-rules">
+        <img src="./images/image-rules.svg">
+      </div>
+    </div>
+  </div>
+  <div class="container">
+    <div class="container-score">
+      <div class="name-game">
+        <span>ROCK</span>
+        <span>PAPER</span>
+        <span>SCISSORS</span>
+      </div>
+      <div class="score">
+        <span>SCORE</span>
+        <span id="score">0</span>
+      </div>
+    </div>
+    <div class="container-game">
+      <img id="triangle" src="./images/bg-triangle.svg">
+      <button id="bnt-ciseau" onclick="ChoiceCiseau()"><img src="./images/icon-scissors.svg"></button>
+      <button id="bnt-feuille" onclick="ChoiceFeuille()"><img src="./images/icon-paper.svg"></button>
+      <button id="bnt-pierre" onclick="ChoicePierre()"><img src="./images/icon-rock.svg"></button>
+
+    </div>
+    <button id="bnt-rules" onclick="OpenPageRules()">RULES</button>
+  </div>
+
+  <script src="./scripts/script.js"></script>
+</body>
+
+</html>
